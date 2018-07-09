@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var uniqueValidator =  require('mongoose-unique-validator');
+
 var Schema = mongoose.Schema;
 
 var rolesValidos = {
@@ -17,4 +18,4 @@ var usuarioSchema  = new Schema({
 
 usuarioSchema.plugin(uniqueValidator, {message:'{PATH} ya está registrado'});
 
-module.exports = mongoose.model('usuario', usuarioSchema);
+module.exports = mongoose.model('Usuario', usuarioSchema);
