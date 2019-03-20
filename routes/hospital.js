@@ -17,7 +17,7 @@ app.get('/', (req, res, next)=>{
 
 	Hospital.find({})
 			.skip(desde)
-			.limit(5)
+			.limit(50)
 			.populate('usuario', 'nombre email')
 		   	.exec(
 					(err, hospitales)=>{
