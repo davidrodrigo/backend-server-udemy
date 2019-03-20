@@ -116,7 +116,7 @@ function subirPorTipo(tipo, id, nombreArchivo, res){
 		Medico.findById(id, (err, medico)=>{
 
 			//Validamos si el id existe
-			if(!medicoActualizado){
+			if(!medico){
 				return res.status(400).json({
 					ok: false,
 					mensaje: 'Médico no existe',
@@ -138,7 +138,7 @@ function subirPorTipo(tipo, id, nombreArchivo, res){
 				return res.status(200).json({
 					ok: true,
 					mensaje: 'Imagen de medico actualizada',
-					usuario: medicoActualizado
+					medico: medicoActualizado
 				});
 
 			})
@@ -173,7 +173,7 @@ function subirPorTipo(tipo, id, nombreArchivo, res){
 				return res.status(200).json({
 					ok: true,
 					mensaje: 'Imagen de hospital actualizada',
-					usuario: hospitalActualizado
+					hospital: hospitalActualizado
 				});
 
 			})

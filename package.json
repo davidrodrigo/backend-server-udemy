@@ -21,5 +21,13 @@
     "mongoose-unique-validation": "^0.1.0",
     "mongoose-unique-validator": "^2.0.1",
     "serve-index": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidrodrigo/backend-server-udemy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidrodrigo/backend-server-udemy/issues"
+  },
+  "homepage": "https://github.com/davidrodrigo/backend-server-udemy#readme"
 }
